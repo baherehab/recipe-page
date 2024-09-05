@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+:root{
+    --colors-: hsl(0, 0%, 100%);
+    --colors-1:hsl(30, 54%, 90%);
+    --colors-2: hsl(30, 18%, 87%);
+    --colors-3: hsl(30, 10%, 34%);
+    --colors-4: hsl(24, 5%, 18%);
+    --colors-5: hsl(14, 45%, 36%);
+    --colors-6: hsl(332, 51%, 32%);
+    --colors-7: hsl(330, 100%, 98%);
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--colors-1);
+}
+#Recipe{
+    background-color: var(--colors-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    margin: 100px 0;
+    width: 680px;
+    padding: 25px;
+    background-color: var(--colors-);
+    border-radius: 20px;
+}
+img{
+    width: 100%;
+    border-radius: 20px;
+}
+h1{
+    font-family: "Young Serif", serif;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    font-size: 34px;
+}
+.content p{
+    width: 100%;
+    margin-bottom: 20px;
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    color: var(--colors-3);
+}
+.time{
+    background-color: var(--colors-7);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+.time h2{
+    font-size: 20px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: var(--colors-6);
+}
+.time ul{
+    padding-left: 22px;
+    color: var(--colors-6);
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+.time ul li{
+    padding-left: 15px;
+    margin-top: 10px;
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+.time ul span{
+    color: var(--colors-3);
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+.time ul .span1{
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+    color: var(--colors-3);
+}
+.ingredients{
+    margin-bottom: 20px;
+}
+.ingredients h2{
+    color: var(--colors-5);
+    margin-bottom: 10px;
+    font-family: "Young Serif", serif;
+    font-weight: 500;
+}
+.ingredients ul{
+    padding-left: 22px;
+    color: var(--colors-5);
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+.ingredients ul li{
+    padding-left: 15px;
+    margin-top: 10px;
+    line-height: 25px;
+}
+.ingredients ul span{
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--colors-3);   
+    font-family: "Outfit", sans-serif;
+}
+hr{
+    background-color: var(--colors-2);
+    border: none;
+    height: 1px;
+}
+.instructions{
+    margin-bottom: 20px;
+}
+.instructions h2{
+    color: var(--colors-5);
+    font-family: "Young Serif", serif;
+    font-weight: 500;
+    margin-top: 22px;
+} 
+ol{
+    padding-left: 22px;
+    color: var(--colors-5);
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+ol li{
+    padding-left: 15px;
+    margin-top: 10px;
+    line-height: 25px;
+}
+ol span{
+    color: var(--colors-3);
+    font-size: 16px;
+    font-weight: 500;
+}
+.instructions .span1{
+    font-weight: 700;
+    color: var(--colors-3);
+}
+.nutrition h2{
+    margin: 20px 0;
+    font-family: "Young Serif", serif;
+    font-weight: 500;
+    color: var(--colors-5);
+}
+.nutrition p{
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 10px;
+    color: var(--colors-3);
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: "Outfit", sans-serif;
+}
+tr {
+    border-bottom: 1px solid #ddd;
+}
+td{
+    color: var(--colors-3);
+    padding: 13px;
+    padding-left: 30px;
+}
+.left{
+    color: var(--colors-5);
+    font-weight: 600;
+    padding-left: 60px;
+}
+.last{
+    border: none;
+}
+
+/* start responsive */
+@media (max-width:700px){
+    .container{
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+    }
+     div{
+        padding: 15px;
+        /* margin: 0 12px; */
+    } 
+    img{
+        border-radius: 0;
+    }
+    .time{
+        margin: 0 15px;
+    }
+    .time li{
+        padding: 0 40px;
+    }
+
+}
